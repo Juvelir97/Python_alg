@@ -1,0 +1,20 @@
+def array_search(A:list, N:int, x:int):
+  ''' Searhing of x in array A 
+      Return an index of the x in A
+      Or -1 if nothing found
+      If multiple x exist , return the first index
+  '''
+  for k in range(N):
+    if A[k] == x:
+      return k
+  return -1
+  
+  
+  
+  
+  def invert_array(A:list, N:int):
+      # A list invertation
+      
+    for k in (N//2):
+      A[k], A[N-1-k] = A[N-1-k], A[k]
+      
