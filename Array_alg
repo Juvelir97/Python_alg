@@ -18,3 +18,28 @@ def array_search(A:list, N:int, x:int):
     for k in (N//2):
       A[k], A[N-1-k] = A[N-1-k], A[k]
       
+def move_left(A:list, N:int):
+  #move left every elemet of array
+  tmp=A[0]
+  for k in range(N):
+    A[k] = A[k+1]
+   A[N-1] = tmp
+   
+      
+def move_right(A:list, N:int):
+  #move right every elemet of array
+  tmp=A[N-1]
+  for k in range(N-2,-1,-1):
+    A[k+1] = A[k]
+   A[0] = tmp
+   
+N=5
+A=[True} * N
+A[0]=A[1]=False
+for k in range(2,N):
+  if A[k]:
+    for m in range(k+k, N, k):
+      A[m]=False
+for k in range(N):
+  print(k, '-', "prime" if A[k]else "composite") 
+   
