@@ -1,0 +1,25 @@
+def is_si,ple_num(x):
+    ''' The function is checking whether x
+        is simple number or not
+        x - integer
+    '''
+    
+    devisor = 2
+    while devisor < x:
+        if x%devisor == 0:
+            return False
+        devisor += 1
+    return True
+    
+    
+def fictorize_number(x):
+    ''' The function is returning devisors
+        of x
+    '''
+    devisor = 2
+    while x>1:
+      if x%devisor == 0:
+        print(devisor)
+        x //= devisor
+      else:
+        devisor += 1
