@@ -1,0 +1,9 @@
+array = [1,2,3,4]
+min = array[0]
+max = array[0]
+
+for el in range(len(array)):
+  if array[el] > max:
+    max = array[el]
+  elif array[el] < min:
+    min = array[el]
